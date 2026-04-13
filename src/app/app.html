@@ -246,6 +246,22 @@
       <h1>Hello, {{ title() }}</h1>
       <app-header></app-header>
       <p>Congratulations!{{ name }} Your app is running. 🎉</p>
+      <h1>Hello {{ name }}</h1>
+
+      <img [src]="imageUrl" width="100" />
+
+      <button (click)="sayHello()">Click Me</button>
+
+      <input [(ngModel)]="username" />
+      <p>You typed: {{ username }}</p>
+
+      <p>Welcome User</p>
+
+      <ul>
+        <li *ngFor="let user of users">
+          {{ user }}
+        </li>
+      </ul>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
